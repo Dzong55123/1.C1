@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class MoneyCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("請輸入1元硬幣的數量:");
+        int oneYuan = scanner.nextInt();
+
+        System.out.println("請輸入5元硬幣的數量:");
+        int fiveYuan = scanner.nextInt();
+
+        System.out.println("請輸入10元硬幣的數量:");
+        int tenYuan = scanner.nextInt();
+
+        System.out.println("請輸入50元硬幣的數量:");
+        int fiftyYuan = scanner.nextInt();
+
+        // 計算總額
+        int totalAmount = oneYuan * 1 + fiveYuan * 5 + tenYuan * 10 + fiftyYuan * 50;
+
+        System.out.println("存了總共 " + totalAmount + " 元");
+
+        scanner.close();
+    }
+}
