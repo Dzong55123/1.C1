@@ -1,0 +1,20 @@
+import java.text.DecimalFormat;
+
+public class Main {
+    public static void main(String[] args) {
+        double result1 = calculateFunction(-3.2);
+        double result2 = calculateFunction(-2.1);
+        double result3 = calculateFunction(0);
+        double result4 = calculateFunction(2.1);
+
+        DecimalFormat df = new DecimalFormat("#.####");
+        System.out.println("f(-3.2) = " + df.format(result1));
+        System.out.println("f(-2.1) = " + df.format(result2));
+        System.out.println("f(0) = " + df.format(result3));
+        System.out.println("f(2.1) = " + df.format(result4));
+    }
+
+    public static double calculateFunction(double x) {
+        return 3 * Math.pow(x, 3) + 2 * x - 1;
+    }
+}
