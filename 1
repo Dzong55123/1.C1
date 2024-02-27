@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class WeightConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please input:");
+        double kilograms = scanner.nextDouble();
+
+        double pounds = kilograms * 2.20462; // 1 kilogram = 2.20462 pounds
+
+        System.out.println("Input: " + kilograms + " kg");
+        System.out.println("Converted: " + pounds + " lbs");
+
+        scanner.close();
+    }
+}
