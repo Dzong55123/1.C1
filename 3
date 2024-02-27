@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DistanceCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("輸入第一組座標 (x1 y1):");
+        int x1 = scanner.nextInt();
+        int y1 = scanner.nextInt();
+
+        System.out.println("輸入第二組座標 (x2 y2):");
+        int x2 = scanner.nextInt();
+        int y2 = scanner.nextInt();
+
+ 
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        System.out.println("兩組座標的距離為: " + distance);
+
+        scanner.close();
+    }
+}
